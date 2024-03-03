@@ -37,7 +37,11 @@
     "vite": "^5.1.4"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint",
-    "*.--write": "prettier --write"
+    "*.{ts,tsx}": [
+      "eslint"
+    ],
+    "*.{ts,tsx,css,scss}": [
+      "prettier --write"
+    ]
   }
 }
